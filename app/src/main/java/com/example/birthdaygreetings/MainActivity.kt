@@ -3,7 +3,7 @@ package com.example.birthdaygreetings
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    GreetingText( message = "Happy Birthday Lokesh!", from = "From Shreyas")
                 }
             }
         }
@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun GreetingText( message: String, from: String, modifier: Modifier = Modifier ) {
-    Row{
+    Column {
         Text(
             text = message,
             fontSize = 100.sp,
@@ -41,17 +41,17 @@ fun GreetingText( message: String, from: String, modifier: Modifier = Modifier )
         )
         Text(
             text = from,
-            fontSize = 36.sp
+            fontSize = 36.sp,
         )
     }
 }
 
 @Preview(
         showBackground = true
-        //,showSystemUi = true
+        ,showSystemUi = true
     ) @Composable
 fun GreetingPreview() {
     BirthdayGreetingsTheme {
-        GreetingText( message = "Happy Birthday Sam!", from = "From Emma")
+        GreetingText( message = "Happy Birthday Lokesh!", from = "From Shreyas")
     }
 }
