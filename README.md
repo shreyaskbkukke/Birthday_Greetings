@@ -38,10 +38,10 @@ To use this application, follow these steps:
 
 ### Credits
 
-This application was developed by [Your Name] as a demonstration of Android development using Jetpack Compose.
+This application was developed by Shreyas KB as a demonstration of Android development using Jetpack Compose.
 
 ### License
 
 This project is licensed under the [MIT License](LICENSE).
 
-For more information, please refer to the documentation or contact [Your Email Address].
+For more information, please refer to the documentation or contact shreyaskb333@gmail.com.
